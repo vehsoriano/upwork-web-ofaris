@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize',
+  'vendors/font-awesome',
+  'vendors/font-awesome-solid',
+  'vendors/font-awesome-regular',
+  'vendors/font-awesome-brands',
+  // 'swiper/src/swiper.scss',
+  // 'react-id-swiper/lib/styles/scss/swiper.scss', 
+  'bootstrap/scss/bootstrap.scss';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts';
+
+// 4. Layout-related sections
+@import
+  'layouts/header',
+  'layouts/footer',
+  'layouts/section-banner',
+  'layouts/section-why-choose',
+  'layouts/section-services.scss',
+  'layouts/section-clients.scss',
+  'layouts/section-outsourcing.scss',
+  'layouts/section-contact.scss';
+
+// 5. Components
+@import
+  'components/modal',
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';

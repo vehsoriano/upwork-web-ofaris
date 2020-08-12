@@ -1,0 +1,36 @@
+.section-banner {
+    padding: 150px 0 0;
+    height: 780px;
+
+    background: url(../assets/images/background-banner.png) 0% 0% no-repeat;
+    background-size: cover;
+
+    .banner-title {
+        text-align: right;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .holder-details {
+        padding: 25px 35px;
+        margin: 100px 0 0 auto;
+        width: 536px;
+        max-width: 100%;
+
+        color: white;
+
+        border: 1px dashed gray;
+    }
+
+    .details-title {
+        margin-bottom: 20px;
+
+        text-transform: uppercase;
+        color: $navy-blue;
+    }
+
+    .details-subtitle {
+        text-transform: uppercase;
+    }
+
+}

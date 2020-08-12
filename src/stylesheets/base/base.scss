@@ -1,0 +1,35 @@
+
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// ---------------------------------------------------------------------------
+  
+.break-sm {
+    display: block;
+}
+
+@include respond-to(md-up) {
+    .break-sm {
+        display: none;
+    }
+}
+
+.section-title {
+    color: $navy-blue;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.diagonal {    
+    position: relative;
+    top: -110px;
+}
+
+.body-overflow {
+    overflow: hidden;
+  
+    main {
+      pointer-events: none;
+    }
+}

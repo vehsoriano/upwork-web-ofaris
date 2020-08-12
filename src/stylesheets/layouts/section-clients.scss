@@ -1,0 +1,59 @@
+.section-clients {
+    padding: 100px 0 0;
+    height: 1142px;
+
+    background: url(../assets/images/background-clients.png) 0% 0% no-repeat;
+    background-size: cover;
+
+    .holder-clients {
+        margin-top: 102px;
+        height: 900px;
+
+        background: url(../assets/images/background-clients-interior.png) 0% 0% no-repeat;
+        background-size: 100%;
+    }
+
+    .holder-clients-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 120px);
+    }
+
+    .holder-image {
+        width: 50%;
+    }
+
+    .client-image {
+        width: 100%;
+    }
+
+    .holder-info {
+        padding: 65px;
+        width: 50%;
+    }
+
+    .info-title {
+        position: relative;
+        margin-bottom: 40px;
+
+        text-transform: uppercase;
+        color: $navy-blue;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: lightgray;
+        }
+    }
+
+    .holder-info-logo {
+        text-align: center;
+    }
+}

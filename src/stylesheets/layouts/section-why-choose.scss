@@ -1,11 +1,10 @@
 .section-why-choose {
-    // position: relative;
-    // top: -90px;
     padding: 150px 0 0;
     height: 930px;
 
     background: url(../assets/images/background-why-choose.png) 0% 0% no-repeat;
     background-size: cover;
+    background-position: center;
 
     .holder-why-choose {
         display: flex;

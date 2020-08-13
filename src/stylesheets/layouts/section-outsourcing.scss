@@ -1,6 +1,7 @@
 .section-outsourcing {
+    position: relative;
+    // margin-bottom: -170px;
     padding: 120px 0 0;
-    // height: 1142px;
 
     background: url(../assets/images/background-nearshore.png) 0% 0% no-repeat;
     background-size: cover;
@@ -86,3 +87,57 @@
 
     }
 }
+
+@include respond-to(lg) {
+    .section-outsourcing {
+        .holder-benefits-list {
+            padding: 0 35px;
+        }
+    }
+}
+
+@include respond-to(md-down) {
+    .section-outsourcing {
+        .holder-benefits-list {
+            padding: 0 20px;
+        }
+
+        .benefits-list {
+            width: 100%;
+        }
+    }
+}
+
+@include respond-to(sm-down) {
+    .section-outsourcing {
+        padding: 30px 0 0;
+
+        .section-desc {
+            margin: 30px auto;
+
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .benefits-list-info {
+            padding: 50px 15px 15px;
+        }
+
+        .benefits-list {
+            margin-bottom: 25px;
+        }
+
+        .holder-image {
+            top: -38.5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .benefits-list-no {
+            top: auto;
+            bottom: 0;
+            line-height: 170px;
+        }
+    }
+}
+

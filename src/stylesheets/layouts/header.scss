@@ -2,4 +2,30 @@
 
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+//  -----------------------------------------------------------------------------
+.header {
+
+    .navbar {
+        background-color: $sapphire;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0 50px;
+
+        color: $navy-blue;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        transition: all .3s ease;
+
+        @include on-event {
+            color: white;
+        }
+    }   
+}

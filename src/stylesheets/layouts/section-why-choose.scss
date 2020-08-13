@@ -1,6 +1,8 @@
 .section-why-choose {
+    position: relative;
+    margin-top: -90px;
     padding: 150px 0 0;
-    height: 930px;
+    height: 980px;
 
     background: url(../assets/images/background-why-choose.png) 0% 0% no-repeat;
     background-size: cover;
@@ -55,5 +57,52 @@
     .desc {
         width: 265px;
         max-width: 100%;
+    }
+}
+
+@include respond-to(md) {
+    .section-why-choose {
+        .holder-why-choose {
+            justify-content: center;
+            margin-top: 85px;        
+        }
+
+        .holder-details {
+            width: 50%;
+
+            &:nth-child(2n) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@include respond-to(sm-down) {
+    .section-why-choose {
+        padding: 90px 0 90px;
+        height: 100%;
+
+        .holder-why-choose {
+            justify-content: center;
+            margin-top: 30px;        
+        }
+
+        .holder-details {
+            width: 100%;
+
+            &:nth-child(2n) {
+                &:after,
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .desc {
+            width: 410px;
+        }
     }
 }

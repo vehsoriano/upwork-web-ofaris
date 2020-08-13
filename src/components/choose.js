@@ -22,7 +22,7 @@ const whyUs = [
 ]
 
 const ChooseUs = () => (
-  <section className="section-why-choose diagonal">
+  <section className="section-why-choose">
     <div className="container">
         <h2 className="section-title">&lt; Why Choose Us &gt;</h2>
         <div className="holder-why-choose">

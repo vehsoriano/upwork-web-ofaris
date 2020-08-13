@@ -3,3 +3,147 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+    position: relative;
+    padding: 100px 0 30px;
+
+    background: url(../assets/images/background-footer.png) 0% 0% no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .holder-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-title {
+        margin-bottom: 41px;
+
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .footer-about {
+        width: 40%;
+    }
+
+    .footer-categories {
+        width: 15%;
+    }
+
+    .footer-services {
+        width: 25%;
+    }
+
+    .footer-socials {
+        width: 20%;
+    }
+
+    .footer-logo {
+        margin-bottom: 41px;
+    }
+
+    .about-desc {
+        margin-top: 10px;
+        width: 390px;
+        max-width: 100%;
+    }
+
+    .about-year {
+        margin-top: 30px;
+    }
+
+    .about-desc,
+    .about-year {
+        font-size: 15px;
+        line-height: 22px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .footer-category-list,
+    .footer-services-list,
+    .footer-socials-list {
+        padding: 0;
+    }
+
+    .category-list,
+    .services-list,
+    .socials-list {
+        list-style-type: none;
+        color: white;
+    }
+
+    .services-list,
+    .category-list {
+        margin-bottom: 0;
+    }
+
+    .category-link {
+        color: white;
+    }
+
+    .footer-socials-list {
+        display: flex;
+    }
+
+    .services-list {
+        .title {
+            margin-bottom: 0;
+        }
+    }
+
+    .socials-list {
+        margin: 0 7.5px;
+    
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .socials-link {
+        .fab {
+            color: $navy-blue;
+        }
+    }
+}
+
+@include respond-to(md-down) {
+    .footer {
+        padding: 125px 0 30px;
+
+        .footer-title {
+            margin-bottom: 8px;
+        }
+
+        .holder-footer {
+            flex-direction: column;
+        }
+
+        .footer-about {
+            order: 4;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+
+        .about-desc {
+            width: 100%;
+        }
+    }
+}
+
+@include respond-to(sm-down) {
+    .footer {
+        padding: 150px 0 30px;
+    }
+}

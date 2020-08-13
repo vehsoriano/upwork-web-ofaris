@@ -13,12 +13,39 @@
         background-size: 100%;
     }
 
-    .holder-clients-info {
+    .wrapper-clients {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 50px);
+    }
+
+    .holder-clients-swiper {
         display: flex;
         align-items: center;
         height: calc(100% - 120px);
+        width: calc(100% - 125px);
     }
 
+    .holder-swiper-button {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-top: -30px;
+        width: calc(100% - 125px);
+    }
+
+    .swiper-button {
+        margin: 0 35px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
     .holder-clients {
         display: flex;
         flex-wrap: wrap;
@@ -27,7 +54,10 @@
         justify-content: center;
         height: 564px;
         max-height: 100%;
-        width: calc(100% - 125px);
+    }
+
+    .swiper-container {
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15)
     }
 
     .holder-image {
@@ -46,8 +76,6 @@
         padding: 65px;
         width: 50%;
         height: 100%;
-
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
         background-color: white;
     }
 
@@ -73,5 +101,27 @@
         margin-top: auto;
 
         text-align: center;
+    }
+}
+
+
+@include respond-to(lg) {
+    .section-clients {
+
+        .container-wrapper {
+            background-size: cover;
+        }
+
+        .holder-clients {
+            height: 500px;
+        }
+
+        .holder-clients-swiper {
+            height: calc(100% - 190px);
+        }
+
+        .holder-info {
+            padding: 65px 25px;
+        }
     }
 }

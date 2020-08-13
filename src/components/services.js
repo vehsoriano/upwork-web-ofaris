@@ -47,7 +47,7 @@ const services = [
 ]
 
 const Services = () => (
-  <section className="section-services diagonal">
+  <section className="section-services" id="service">
     <div className="container">
       <h2 className="section-title">&lt; Our Services &gt;</h2>
       <div className="holder-services">        
@@ -60,7 +60,7 @@ const Services = () => (
                   </div>
                   <p className="title">{item.title}</p>
                   <p className="desc">{item.desc}</p>
-                  <a href={item.link}>&lt; Read More &gt;</a>
+                  <a href={item.link} className="link">&lt; Read More &gt;</a>
               </div>
             )
         })

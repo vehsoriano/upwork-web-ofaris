@@ -24,7 +24,7 @@
 
 .diagonal {    
     position: relative;
-    top: -110px;
+    // top: -110px;
 }
 
 .body-overflow {
@@ -34,3 +34,30 @@
       pointer-events: none;
     }
 }
+
+.link {
+    font-weight: 500;
+    color: $navy-blue;
+    text-transform: uppercase;
+
+    transition: all .3s ease-in-out;
+
+    @include on-event {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@include respond-to(md) {
+    .section-title {
+        font-size: 22px;
+    }   
+}
+
+@include respond-to(sm-down) {
+    .section-title {
+        font-size: 20px;
+    }   
+}
+
+

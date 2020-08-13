@@ -1,4 +1,6 @@
 .section-services {
+    padding-top: 50px;
+
     .holder-services {
        display: flex;
        flex-wrap: wrap; 
@@ -33,5 +35,29 @@
         font-weight: bold;
         color: $navy-blue;
         text-transform: uppercase;
+    }
+}
+
+@include respond-to(md) {
+    .section-services {
+        .holder-details {
+            margin-bottom: 22px;
+            width: 48.5%;
+        }
+    }
+}
+
+@include respond-to(sm-down) {
+    .section-services {
+        padding-top: 0;
+
+        .holder-details {
+            width: 100%;
+            padding: 25px 15px;
+        }
+
+        .holder-services {
+            margin-top: 30px;
+        }
     }
 }

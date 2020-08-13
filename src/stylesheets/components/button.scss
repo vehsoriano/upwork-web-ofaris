@@ -3,3 +3,34 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.swiper-button {
+    background: none;
+    border: none;
+    outline: none;
+
+    @include on-event {
+        outline: none;
+        border: none;
+    }
+}
+
+.button {
+    position: relative;
+    
+    background: none;
+    border: none;
+    outline: none;
+
+    text-transform: uppercase;
+    color: $navy-blue;
+
+    transition: all .3s ease;
+
+    @include on-event {
+        outline: none;
+        border: none;
+
+        color: black;
+    }
+}

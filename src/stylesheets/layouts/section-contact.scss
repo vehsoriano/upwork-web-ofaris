@@ -1,4 +1,7 @@
 .section-contact {
+    position: relative;
+    margin-bottom: -115px;
+
     padding: 100px 0 100px;
 
     background: url(../assets/images/background-contact-us.png) 0% 0% no-repeat;
@@ -7,9 +10,10 @@
 
     &.banner {
         position: relative;
+        margin-bottom: -190px;
         z-index: 2;
 
-        height: 445px;
+        height: 475px;
         width: 100%;
 
         background: url(../assets/images/background-team.png) 0% 0% no-repeat;
@@ -35,21 +39,72 @@
     }
 
     .section-title {
-        padding: 75px 0 100px;
+        padding: 125px 0 100px;
     }
 
     .holder-contact {
         display: flex;
         flex-wrap: wrap;
+        height: 625px;
+
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
     }
 
     .holder-form {
         width: 50%;
+        padding: 65px;
+
+        background-color: white;
+    }
+
+    .holder-form-group {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 25px 0 10px;
+
+        border-bottom: 1px solid $navy-blue;
+    }
+
+    .form-control {
+        margin-bottom: 5px;
+        
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        border-color: $navy-blue;
+        outline: none;
+
+        resize: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .form-label {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $navy-blue;
+    }
+
+    .holder-button {
+        display: flex;
+        padding-right: 20px;
+        margin-top: auto;
+    }
+
+    .button-submit {
+        margin-left: auto;
     }
 
     .holder-form-image {
         width: 50%;
+        height: 100%;
+
+        background: url(../assets/images/contact-us.png) 0% 0% no-repeat;
+        background-size: cover;
     }
 
     .form-image {
@@ -69,15 +124,38 @@
     .contact-country-list {
         display: flex;
         flex-wrap: wrap;
+        padding-left: 0;
     }
 
     .country-list {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 33.33%;
 
         list-style-type: none;
+
+        &:nth-child(2n) {
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 60%;
+                height: 86px;
+                width: 1px;
+                background-color: $navy-blue;
+                transform: translateY(-50%);
+            }
+
+            &:before {
+                left: 0;
+            }
+            
+            &:after {
+                right: 0;
+            }
+        }
     }
 
     .country {
@@ -90,6 +168,8 @@
     }
 
     .street {
+        margin-bottom: 0;
+
         font-size: 15px;
         text-transform: uppercase;
     }
@@ -107,5 +187,81 @@
         letter-spacing: 20px;
         color: $navy-blue;
         text-align: center;
+    }
+}
+
+@include respond-to(md) {
+    .section-contact {
+        background-image: url(../assets/images/background-contact-us@2x.png);
+    }
+}
+
+
+@include respond-to(md) {
+    .section-contact {
+        margin-bottom: -190px;
+
+        .contact-country-list {
+            justify-content: center;
+        }
+
+        .country-list {
+            width: 50%;
+
+            &:nth-child(2n) {
+                
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to(sm-down) {
+    .section-contact {
+        margin-bottom: -210px;
+        &.banner {
+            margin-bottom: -135px;
+            padding: 40px 0;
+            height: 225px;
+
+            .banner-title {
+                font-size: 22px;
+            }
+        }
+
+        .contact-country-list {
+            justify-content: center;
+        }
+
+        .holder-contact-country {
+            margin-top: 20px;
+        }
+
+        .country-list {
+            width: 100%;
+            margin-bottom: 15px;
+
+            &:nth-child(2n) {
+                &:after,
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .country {
+            margin: 20px 0 15px;
+        }
+
+        .section-title {
+            padding: 60px 0 25px
+        }
+
+        .contact-email {
+            font-size: 18px;
+            letter-spacing: 7px;
+        }
     }
 }

@@ -8,6 +8,7 @@ import Services from "../components/services"
 import Clients from "../components/clients"
 import Outsourcing from "../components/outsourcing"
 import ContactUs from "../components/contact"
+import 'swiper/dist/css/swiper.css';
 
 const IndexPage = () => (
   <Layout>

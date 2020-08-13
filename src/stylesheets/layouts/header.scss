@@ -15,17 +15,33 @@
         justify-content: center;
     }
 
-    .navbar-light .navbar-nav .nav-link {
-        margin: 0 50px;
-
-        color: $navy-blue;
-        text-transform: uppercase;
-        font-weight: 400;
-
-        transition: all .3s ease;
-
-        @include on-event {
-            color: white;
+    .navbar-light {
+        .navbar-nav  {
+            .nav-link {
+                margin: 0 50px;
+        
+                color: $navy-blue;
+                text-transform: uppercase;
+                font-weight: 400;
+        
+                transition: all .3s ease;
+        
+                @include on-event {
+                    color: white;
+                }
+            }
         }
     }   
+}
+
+@include respond-to(md-down) {
+    .header {
+        .navbar-light {
+            .navbar-nav  {
+                .nav-link {
+                    margin: 0;
+                }
+            }
+        }
+    }
 }

@@ -1,27 +1,6 @@
 import React from "react"
-import ChooseIconSafe  from '../assets/images/choose-icon-1.png';
-import ChooseIconGuarantee  from '../assets/images/choose-icon-2.png';
-import ChooseIconSupport from '../assets/images/choose-icon-3.png';
 
-const whyUs = [
-    {
-        image: ChooseIconGuarantee,
-        title: '99% uptime guarantee',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis massa neque, eget tempor lorem pretium varius. Nullam euismod mattis ligula, sit amet semper diam.'
-    },
-    {
-        image: ChooseIconSafe,
-        title: 'safe and secure',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis massa neque, eget tempor lorem pretium varius. Nullam euismod mattis ligula, sit amet semper diam.'
-    },
-    {
-        image: ChooseIconSupport,
-        title: 'our dedicated support',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis massa neque, eget tempor lorem pretium varius. Nullam euismod mattis ligula, sit amet semper diam.'
-    }
-]
-
-const ChooseUs = () => (
+const ChooseUs = ({whyUs}) => (
   <section className="section-why-choose">
     <div className="container">
         <h2 className="section-title">&lt; Why Choose Us &gt;</h2>

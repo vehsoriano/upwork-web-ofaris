@@ -1,28 +1,7 @@
 import React from "react"
 import { Form } from "react-bootstrap"
 
-const contactCountry = [
-  {
-    icon: require('../assets/images/icon-country.svg'),
-    country: 'Uruaguay',
-    streetAddress: 'COLONIA 981 AP 305',
-    city: 'MONTEVIDEO'
-  },
-  {
-    icon: require('../assets/images/icon-country.svg'),
-    country: 'Argentina',
-    streetAddress: 'Av Santa Fe 2631 1F',
-    city: 'Buenos Aires'
-  },
-  {
-    icon: require('../assets/images/icon-country.svg'),
-    country: 'Usa',
-    streetAddress: '3020 Rowena Ave',
-    city: 'Los Angeles, California'
-  }
-]
-
-const Contact = () => {
+const Contact = ({contact}) => {
   return (
     <>
       <section className="section-contact banner" id="contact">
@@ -68,7 +47,7 @@ const Contact = () => {
           <div className="holder-contact-country">
             <ul className="contact-country-list">
               {
-                contactCountry.map((item, i) => {
+                contact.map((item, i) => {
                   return(
                     <li className="country-list" key={i}>
                       <div className="holder-icon">

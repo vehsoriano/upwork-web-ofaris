@@ -6,7 +6,7 @@ import Logo from '../assets/images/header-logo.svg';
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <Navbar className="navbar" expand="lg">
+    <Navbar className="navbar navbar-dark" expand="lg">
       <Navbar.Brand href="#home">
         <img
           src={Logo}

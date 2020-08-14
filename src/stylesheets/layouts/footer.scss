@@ -83,6 +83,13 @@
 
     .category-link {
         color: white;
+        
+        transition: all .3s ease;
+
+        @include on-event {
+            color: $navy-blue;
+            text-decoration: none;
+        }
     }
 
     .footer-socials-list {
@@ -110,6 +117,14 @@
     .socials-link {
         .fab {
             color: $navy-blue;
+            transition: all .3s ease;
+        }
+
+
+        @include on-event {
+            .fab {
+                color: $white;
+            }
         }
     }
 }
@@ -145,5 +160,9 @@
 @include respond-to(sm-down) {
     .footer {
         padding: 150px 0 30px;
+
+        .footer-socials {
+            width: 100%;
+        }
     }
 }

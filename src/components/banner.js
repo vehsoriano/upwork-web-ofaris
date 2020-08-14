@@ -5,28 +5,7 @@ import 'swiper/dist/css/swiper.css';
 import arrowLeft from '../assets/images/arrow-left.svg';
 import arrowRight from '../assets/images/arrow-right.svg';
 
-const banner = {
-  title: <h1 className="banner-title">We build <br /> great software</h1>,
-  details: [
-    {
-      title: 'Development solutions',
-      subtitle: 'we play in your team',
-      desc: 'Give your project the right tools. Find the perfect services for your business'
-    },
-    {
-      title: 'Development solutions',
-      subtitle: 'we play in your team',
-      desc: 'Give your project the right tools. Find the perfect services for your business'
-    },
-    {
-      title: 'Development solutions',
-      subtitle: 'we play in your team',
-      desc: 'Give your project the right tools. Find the perfect services for your business'
-    }
-  ]
-}
-
-const Banner = () => {
+const Banner = ({banner}) => {
   const [swiper, updateSwiper] = useState(null);
 
   const goNext = () => {
